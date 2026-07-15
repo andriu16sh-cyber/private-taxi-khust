@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" role="img" aria-labelledby="title desc">
+<title id="title">Сучасний автомобіль таксі</title>
+<desc id="desc">Стилізоване зображення темного седана з жовтими акцентами</desc>
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3a3d43"/>
+    <stop offset=".42" stop-color="#17191d"/>
+    <stop offset="1" stop-color="#090a0c"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#9aa6b8" stop-opacity=".65"/>
+    <stop offset="1" stop-color="#252b33" stop-opacity=".9"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#fff" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+
+<ellipse cx="415" cy="302" rx="330" ry="26" fill="#000" opacity=".38" filter="url(#blur)"/>
+
+<path d="M112 223c12-34 45-54 95-61l92-12 87-74c17-14 38-22 60-21l101 3c25 1 48 10 67 27l76 67c31 7 59 21 79 39 15 14 24 34 24 55v21c0 17-14 31-31 31h-39c-4-43-40-77-84-77s-80 34-84 77H286c-4-43-40-77-84-77s-80 34-84 77H90c-24 0-43-19-43-43 0-15 8-29 21-37l44-15Z" fill="url(#body)"/>
+
+<path d="M316 148l87-72c10-8 22-12 35-12h49v82l-171 2Zm187-84h38c18 0 35 6 48 18l74 66-160-2V64Z" fill="url(#glass)"/>
+
+<path d="M500 66v79" stroke="#08090b" stroke-width="7"/>
+<path d="M303 158h371" stroke="#656a73" stroke-opacity=".25" stroke-width="3"/>
+<path d="M291 166h391" stroke="#f2c94c" stroke-width="5" stroke-linecap="round"/>
+<path d="M159 206c168-25 349-27 546-7" stroke="url(#shine)" stroke-width="7" stroke-linecap="round"/>
+
+<path d="M74 226c30-6 59-7 88-3l-6 26-96 8c-7-12-3-27 14-31Z" fill="#f2c94c"/>
+<path d="M695 211c41 2 71 14 90 36l-75 1-15-37Z" fill="#f2c94c"/>
+
+<path d="M374 174h61" stroke="#8b9099" stroke-width="5" stroke-linecap="round"/>
+<path d="M548 174h61" stroke="#8b9099" stroke-width="5" stroke-linecap="round"/>
+
+<g>
+  <circle cx="202" cy="290" r="62" fill="#0a0b0d"/>
+  <circle cx="202" cy="290" r="42" fill="#343840"/>
+  <circle cx="202" cy="290" r="22" fill="#111316"/>
+  <circle cx="202" cy="290" r="7" fill="#f2c94c"/>
+  <path d="M202 250v80M162 290h80M174 262l56 56M230 262l-56 56" stroke="#696f7a" stroke-width="5" opacity=".7"/>
+</g>
+
+<g>
+  <circle cx="639" cy="290" r="62" fill="#0a0b0d"/>
+  <circle cx="639" cy="290" r="42" fill="#343840"/>
+  <circle cx="639" cy="290" r="22" fill="#111316"/>
+  <circle cx="639" cy="290" r="7" fill="#f2c94c"/>
+  <path d="M639 250v80M599 290h80M611 262l56 56M667 262l-56 56" stroke="#696f7a" stroke-width="5" opacity=".7"/>
+</g>
+
+<path d="M390 49h93c10 0 18 8 18 18v5H371v-4c0-10 8-19 19-19Z" fill="#f2c94c"/>
+<rect x="393" y="55" width="86" height="9" rx="4.5" fill="#111215" opacity=".8"/>
+</svg>
