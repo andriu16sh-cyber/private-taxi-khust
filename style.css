@@ -1676,3 +1676,70 @@ a {
     letter-spacing: -0.055em;
   }
 }
+
+
+/* Instagram і TikTok */
+.social-links-block {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.social-links-title {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.social-link {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.055);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(242, 201, 76, 0.55);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f2c94c;
+}
+
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 520px) {
+  .social-links {
+    grid-template-columns: 1fr;
+  }
+
+  .social-link {
+    justify-content: flex-start;
+  }
+}

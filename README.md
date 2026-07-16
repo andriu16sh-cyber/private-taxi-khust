@@ -108,43 +108,9 @@ const SITE_CONFIG = {
 - Додано версію до CSS і JavaScript, щоб браузер не використовував старий кеш.
 
 
-## SEO та основний домен
-
-Основний домен:
-
-`https://private-taxi-khust.com.ua/`
-
-Додано:
-
-- `CNAME`
-- `robots.txt`
-- `sitemap.xml`
-- canonical URL
-- Open Graph URL та абсолютне зображення
-- robots meta
-- JSON-LD для TaxiService / LocalBusiness
-- години роботи 06:00–00:00
-- три контактні номери
-- послуги: таксі по місту, міжміське таксі, доставлення речей
-
-### Після завантаження на GitHub
-
-1. Відкрити `Settings → Pages`.
-2. У полі `Custom domain` вказати `private-taxi-khust.com.ua`.
-3. Увімкнути `Enforce HTTPS`, коли опція стане доступною.
-4. Додати домен у Google Search Console як `Domain property`.
-5. Підтвердити домен DNS TXT-записом.
-6. Надіслати sitemap: `https://private-taxi-khust.com.ua/sitemap.xml`.
-7. У URL Inspection перевірити `https://private-taxi-khust.com.ua/` та запросити індексацію.
-8. У Google Business Profile вказати сайт `https://private-taxi-khust.com.ua/`.
-
-Домен `private-taxi-khust.online` не повинен містити окрему копію сайту.
-Налаштуйте постійне перенаправлення 301 на `https://private-taxi-khust.com.ua/`.
-
-
 ## Соціальні мережі
 
 - Instagram: https://www.instagram.com/privattaxikhust/
 - TikTok: https://www.tiktok.com/@privattaxikhust
 
-Кнопки додані в контактний блок. Посилання також внесені до JSON-LD через `sameAs`.
+Ця версія ще не містить файлів і налаштувань для власного домену.
