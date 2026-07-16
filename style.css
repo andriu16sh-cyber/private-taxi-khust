@@ -1437,3 +1437,29 @@ a {
     font-size: 18px;
   }
 }
+
+
+/* Після видалення плашки точки приїзду */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual .car-scene {
+  top: 54%;
+}
+
+@media (max-width: 760px) {
+  .hero-visual .car-scene {
+    top: 56%;
+  }
+}
+
+
+/* Три актуальні послуги */
+@media (min-width: 1021px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
