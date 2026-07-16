@@ -1,13 +1,11 @@
 // ЗАМІНИТЬ ЦІ ДАНІ НА СВОЇ
 const SITE_CONFIG = {
-  phoneDisplay: "+38 (000) 000-00-00",
-  phoneHref: "+380000000000",
-  telegramUrl: "https://t.me/your_username"
+  phoneDisplay: "+38 (067) 979-66-71",
+  phoneHref: "+380679796671"
 };
 
 const phoneLinks = document.querySelectorAll("[data-phone-link]");
 const phoneTexts = document.querySelectorAll("[data-phone-text]");
-const telegramLinks = document.querySelectorAll("[data-telegram-link]");
 
 phoneLinks.forEach((link) => {
   link.href = `tel:${SITE_CONFIG.phoneHref}`;
@@ -17,9 +15,6 @@ phoneTexts.forEach((element) => {
   element.textContent = SITE_CONFIG.phoneDisplay;
 });
 
-telegramLinks.forEach((link) => {
-  link.href = SITE_CONFIG.telegramUrl;
-});
 
 document.getElementById("current-year").textContent = new Date().getFullYear();
 

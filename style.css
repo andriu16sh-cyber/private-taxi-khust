@@ -1181,3 +1181,159 @@ a {
     font-size: 20px;
   }
 }
+
+
+/* Тарифи */
+.tariff-section {
+  background: #ecece7;
+}
+
+.tariff-grid {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.tariff-copy h2 {
+  margin: 0;
+  font-size: clamp(36px, 4.3vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.tariff-copy > p {
+  margin: 20px 0 0;
+  color: var(--muted);
+}
+
+.tariff-highlights {
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tariff-highlights article {
+  padding: 20px;
+  border: 1px solid #deded8;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.tariff-highlights strong,
+.tariff-highlights span {
+  display: block;
+}
+
+.tariff-highlights strong {
+  font-size: 19px;
+  letter-spacing: -0.03em;
+}
+
+.tariff-highlights span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.tariff-image-card {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 25px;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.tariff-image-card a {
+  display: block;
+}
+
+.tariff-image-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.tariff-image-card a:hover img {
+  transform: scale(1.012);
+}
+
+.tariff-image-card figcaption {
+  padding: 13px 18px 16px;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Список телефонів */
+.phone-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.cta-contact .phone-item {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  font-size: clamp(19px, 2.4vw, 29px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-contact .phone-item:hover {
+  border-color: rgba(242, 201, 76, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cta-contact .primary-phone {
+  border-color: rgba(242, 201, 76, 0.4);
+  color: var(--accent);
+}
+
+.phone-item span {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-actions {
+  margin-top: 18px;
+}
+
+@media (max-width: 1020px) {
+  .tariff-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .tariff-copy {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 760px) {
+  .tariff-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .tariff-call-button {
+    width: 100%;
+  }
+
+  .tariff-image-card {
+    border-radius: 18px;
+  }
+
+  .cta-contact .phone-item {
+    font-size: 20px;
+  }
+}

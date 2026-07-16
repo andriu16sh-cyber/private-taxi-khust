@@ -15,9 +15,8 @@
 
 ```js
 const SITE_CONFIG = {
-  phoneDisplay: "+38 (000) 000-00-00",
-  phoneHref: "+380000000000",
-  telegramUrl: "https://t.me/your_username"
+  phoneDisplay: "+38 (067) 979-66-71",
+  phoneHref: "+380679796671"
 };
 ```
 
@@ -39,3 +38,12 @@ const SITE_CONFIG = {
 ## Власний домен
 
 Коли домен буде куплений, його можна додати в `Settings` → `Pages` → `Custom domain`.
+
+
+## Додані контакти
+
+- Головний: +38 (067) 979-66-71
+- Додатковий: +38 (068) 142-50-01
+- Додатковий: +38 (095) 185-21-26
+
+Зображення тарифів знаходиться у `assets/tariffs.jpg`.
