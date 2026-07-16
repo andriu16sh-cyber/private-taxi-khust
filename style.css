@@ -1337,3 +1337,342 @@ a {
     font-size: 20px;
   }
 }
+
+
+/* Однаковий блок телефонів і графік роботи */
+.working-hours {
+  margin-top: 18px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.working-hours span {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.working-hours strong {
+  color: var(--accent);
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.cta-contact > .phone-list {
+  margin-top: 14px;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 12px;
+}
+
+.cta-contact .phone-item {
+  width: 100%;
+  min-width: 0;
+  min-height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 18px 16px;
+  font-size: clamp(15px, 1.75vw, 22px);
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.cta-contact .phone-item span {
+  margin-top: 8px;
+  white-space: normal;
+}
+
+.cta-contact > .contact-actions {
+  margin-top: 18px;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.viber-button {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.viber-button:hover {
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+@media (max-width: 760px) {
+  .cta-contact > .phone-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-contact .phone-item {
+    min-height: 92px;
+    font-size: 21px;
+  }
+
+  .cta-contact > .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .working-hours {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 980px) {
+  .cta-contact .phone-item {
+    font-size: 18px;
+  }
+}
+
+
+/* Після видалення плашки точки приїзду */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual .car-scene {
+  top: 54%;
+}
+
+@media (max-width: 760px) {
+  .hero-visual .car-scene {
+    top: 56%;
+  }
+}
+
+
+/* Три актуальні послуги */
+@media (min-width: 1021px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* Виправлений блок телефонів: без накладання номерів */
+.cta-inner {
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 520px);
+  gap: 64px;
+}
+
+.cta-contact {
+  min-width: 0;
+}
+
+.cta-contact > .phone-list {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+  width: 100%;
+}
+
+.cta-contact .phone-item {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 86px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px;
+  padding: 16px 20px !important;
+  overflow: hidden;
+  white-space: normal !important;
+}
+
+.cta-contact .phone-number {
+  min-width: 0;
+  color: inherit;
+  font-size: clamp(19px, 2vw, 27px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.cta-contact .phone-item > span {
+  flex: 0 0 auto;
+  max-width: 92px;
+  margin: 0 !important;
+  text-align: right;
+  line-height: 1.4;
+  white-space: normal !important;
+}
+
+.cta-contact .primary-phone .phone-number {
+  color: var(--accent);
+}
+
+@media (max-width: 1020px) {
+  .cta-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .cta-contact {
+    width: 100%;
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cta-contact .phone-item {
+    min-height: 96px !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 7px;
+  }
+
+  .cta-contact .phone-number {
+    font-size: 21px;
+  }
+
+  .cta-contact .phone-item > span {
+    max-width: none;
+    text-align: left;
+  }
+}
+
+
+/* =========================================================
+   ФІНАЛЬНИЙ БЛОК ТЕЛЕФОНІВ — унікальні класи без конфліктів
+   ========================================================= */
+
+.cta-inner {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 560px) !important;
+  align-items: start !important;
+  gap: 64px !important;
+}
+
+.cta-contact {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.taxi-phone-cards {
+  width: 100%;
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.taxi-phone-card {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 92px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: center;
+  gap: 7px;
+  padding: 17px 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.045);
+  color: #ffffff;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.taxi-phone-card:hover {
+  border-color: rgba(242, 201, 76, 0.55);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.taxi-phone-card-main {
+  border-color: rgba(242, 201, 76, 0.52);
+}
+
+.taxi-phone-card-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.taxi-phone-card-number {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  color: inherit;
+  font-size: clamp(21px, 2.15vw, 29px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+}
+
+.taxi-phone-card-main .taxi-phone-card-number {
+  color: var(--accent);
+}
+
+.cta-contact > .contact-actions {
+  width: 100%;
+  margin-top: 16px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 10px !important;
+}
+
+.cta-contact > .contact-actions .button {
+  width: 100%;
+  min-width: 0;
+  padding-right: 14px;
+  padding-left: 14px;
+  text-align: center;
+  white-space: normal;
+}
+
+@media (max-width: 1100px) {
+  .cta-inner {
+    grid-template-columns: 1fr !important;
+    gap: 42px !important;
+  }
+
+  .cta-contact {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 600px) {
+  .taxi-phone-card {
+    min-height: 88px;
+    padding: 16px;
+  }
+
+  .taxi-phone-card-number {
+    font-size: clamp(20px, 6.4vw, 25px);
+  }
+
+  .cta-contact > .contact-actions {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .taxi-phone-card-number {
+    font-size: 18px;
+    letter-spacing: -0.055em;
+  }
+}
