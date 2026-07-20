@@ -1,4 +1,3 @@
-// ЗАМІНИТЬ ЦІ ДАНІ НА СВОЇ
 const SITE_CONFIG = {
   phoneDisplay: "+38 (067) 979-66-71",
   phoneHref: "+380679796671"
